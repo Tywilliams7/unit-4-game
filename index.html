@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+</head>
+<body>
+    
+        <h1 class="myHeader">CrystalsCollecter!</h1>
+        <!--Instructions-->
+    <div class="instructions">
+        <p>You will be given a random number at the start of the game</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal</p>
+    </div>
+        <!--Random#'s and tallies-->
+    <div>
+     
+        
+        <div class="container">
+            <div class="row">
+                    <p class="randy"> #<span id="random-number"></span></p>
+                <div class="col-1" class="float-right">
+                    <p>Wins <span id="wins">0</span></p>
+                
+                    <p> Losses <span id="losses">0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--Butttons-->
+    <div>
+            <button id="redgem" onclick="IncScore('red')" type="button" class="btn btn-danger"></button>
+            <button id="bluegem" onclick="IncScore('blue')" type="button" class="btn btn-primary"></button>
+            <button id="yellowgem" onclick="IncScore('yellow')" type="button" class="btn btn-warning"></button>
+            <button id="greengem" onclick="IncScore('green')" type="button" class="btn btn-success"></button>
+    </div>
+        <!--Your total score text-->
+    <div>
+    <p class="score">Your total score is:</p>
+
+    </div>
+
+    <div class="ts">
+        <p id="totalScore">0</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
