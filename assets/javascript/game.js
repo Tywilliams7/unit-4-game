@@ -101,8 +101,8 @@ function IncScore(gemColor) {
     
     }
     else {
-        // totalScore.text(totalValue)
-        totalScore = totalValue
+        totalScore.text(totalValue)
+        // totalScore = totalValue
     
     }
 
